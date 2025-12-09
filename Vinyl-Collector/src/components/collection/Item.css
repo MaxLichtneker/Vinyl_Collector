@@ -1,0 +1,22 @@
+.item-container{
+    width: 100%;
+    min-width: 65%;
+    height:250px;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #D9D9D9;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: fit-content;
+    
+    margin: 10px;
+
+    text-align: left;
+}

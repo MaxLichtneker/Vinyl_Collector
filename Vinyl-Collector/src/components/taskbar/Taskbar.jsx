@@ -1,4 +1,5 @@
 import "./Taskbar.css"
+import SecondaryNavbar from "./SecondaryNavbar";
 
 function Taskbar(){
     return(
