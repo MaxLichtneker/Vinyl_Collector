@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Taskbar from './components/taskbar/Taskbar'
+import "./App.css"
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import Login from './pages/Login';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Taskbar/>
-      <div className='landing-page-container'>
-        <h1>YOUR COLLECTION</h1>
-      </div>
-    </>
+function App(){
+    return (
+    <Router>
+     <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/landingpage" element={<LandingPage/>}/>
+     </Routes>
+    </Router>
   )
 }
 

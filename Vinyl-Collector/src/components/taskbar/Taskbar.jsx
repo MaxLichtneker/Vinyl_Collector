@@ -1,3 +1,5 @@
+import "./Taskbar.css"
+
 function Taskbar(){
     return(
         <div className="taskbar">
