@@ -2,6 +2,7 @@ import "./LandingPage.css"
 import Taskbar from "../components/taskbar/Taskbar";
 import SecondaryNavbar from "../components/taskbar/SecondaryNavbar";
 import Collection from "../components/collection/Collection";
+import { useState,useEffect } from "react";
 
 function LandingPage(){
   return (
