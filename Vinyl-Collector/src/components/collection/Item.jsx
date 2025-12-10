@@ -8,7 +8,7 @@ function Item(props){
         year:"numeric",
     })
 
-
+    var genres = props.genre.join(', ');
 
     return(
         <div className="item-container">
@@ -17,7 +17,7 @@ function Item(props){
                 <h1 className="header-style">{props.albumName}</h1>
                 <p className="infotext-style">Artist: {props.artistName}</p>
                 <p className="infotext-style">{props.albumDescription}</p>
-                <p className="infotext-style">Genre: {props.genre}</p>
+               <p className="infotext-style">Genre: {genres}</p>
             </div>
             <div className="text-container-right">
                 <p>Added to collection in: {date}</p>

@@ -29,7 +29,7 @@ function Collection(){
             thumbnail={release.basic_information.cover_image} 
             albumDescription={`Released in ${release.basic_information.year}`} 
             dateAdded={release.date_added}
-            genre={[release.basic_information.genres]}
+            genre={release.basic_information.genres}
         />
     )
     return(
