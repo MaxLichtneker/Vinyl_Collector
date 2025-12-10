@@ -29,6 +29,15 @@
   margin-right: 5em;
 }
 
+.taskbar-searchbar{
+  border: 0;
+  border-radius: 15px;
+
+  width: 45em;
+  height: 30px;
+  margin-left:25px;
+}
+
 .secondary-navbar{
   display: flex;
   justify-content: left;

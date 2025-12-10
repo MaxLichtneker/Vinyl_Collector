@@ -1,6 +1,10 @@
 #root {
   text-align: center;
   display: flex;
+  overflow-x: hidden;
+
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes logo-spin {

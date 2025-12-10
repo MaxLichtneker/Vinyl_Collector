@@ -6,6 +6,7 @@ function Taskbar(){
         <div className="taskbar">
             <div className="taskbar-container">
                 <h1>VYNL COLLECTOR</h1>
+                <input className="taskbar-searchbar"></input>
             </div>
             <div className="taskbar-container-right">
                 <h1>I</h1>

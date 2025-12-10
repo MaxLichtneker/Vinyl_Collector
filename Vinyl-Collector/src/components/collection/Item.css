@@ -1,7 +1,7 @@
 .item-container{
     width: 100%;
     min-width: 65%;
-    height:250px;
+    height:300px;
 
     display: flex;
     flex-direction: row;
@@ -11,14 +11,26 @@
     border-radius: 10px;
 }
 
+.header-style{
+    margin: 0;
+}
+
+.infotext-style{
+    margin-bottom: 0;
+}
+
 .text-container{
     display: flex;
     flex-direction: column;
-
     width: auto;
     height: fit-content;
     
     margin: 10px;
 
     text-align: left;
+}
+
+.text-container-right{
+    margin-left: auto;
+    margin-right: 20px;
 }
