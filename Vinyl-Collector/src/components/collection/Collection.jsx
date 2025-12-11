@@ -3,13 +3,17 @@ import Item from "./Item";
 import { useState,useEffect } from "react";
 
 function Collection(props){
+
+    const [sortType, setSortType] = useState(0);
+
     const[userCollection, setUserCollection] = useState([]);
         useEffect(()=>{
         const fetchData = async () =>{
             try{
                 const response = await fetch(props.url);
                 const json = await response.json();
-                setUserCollection(json.releases || []);
+                
+                setUserCollection(json.releases.sort((a,b)=> a.basic_information.title.localeCompare(b.basic_information.title)) || []);
             }
             catch(error)
             {
@@ -19,7 +23,7 @@ function Collection(props){
     fetchData();
     },[props.url]);
 
-    const listAlbums = userCollection.map(release=> 
+    const listAlbums = userCollection.map(release => 
         <Item albumName={
             release.basic_information.title} 
             artistName={release.basic_information.artists?.[0]?.name} 

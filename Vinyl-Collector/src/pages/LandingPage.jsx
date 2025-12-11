@@ -3,6 +3,7 @@ import Taskbar from "../components/taskbar/Taskbar";
 import SecondaryNavbar from "../components/taskbar/SecondaryNavbar";
 import Collection from "../components/collection/Collection";
 import { useState,useEffect } from "react";
+import CollectionFilter from "../components/collection/Filter";
 
 function LandingPage(){
   const [currentPage, setpage] = useState(1);
@@ -35,7 +36,6 @@ function LandingPage(){
     setpage(function(prevCount){
         if(prevCount < collectionPages.pagination.pages){
         handleURL(collectionPages.pagination.urls.next)
-        window.scrollTo(0, 0);
         return(prevCount +=1);
       }else{
           return(prevCount = 3)
@@ -62,7 +62,9 @@ function LandingPage(){
 
       <h1>YOUR COLLECTION</h1>
 
-      <Collection url={url}/>
+      <CollectionFilter/>
+
+      <Collection url={url} filterType={'basic_information.title'}/>
 
       <div className="collection-page-container">
         <button onClick={PreviousPage}>previous page</button>
