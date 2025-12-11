@@ -5,7 +5,7 @@ import Collection from "../components/collection/Collection";
 import { useState,useEffect } from "react";
 
 function LandingPage(){
-  const [currentPage, setpage] = useState(0);
+  const [currentPage, setpage] = useState(1);
   const [url, setPageURL] = useState("https://api.discogs.com/users/maxlich07/collection/folders/0/releases");
   
   const[collectionPages, setCollectionPages] = useState([]);
@@ -45,11 +45,11 @@ function LandingPage(){
 
   function PreviousPage(){
     setpage(function(prevCount){
-      if(prevCount > 0){
-          handleURL(collectionPages.pagination.urls.previous)
+      if(prevCount > 1){
+          handleURL(collectionPages.pagination.urls.prev)
         return(prevCount -=1);
       }else{
-           return(prevCount = 0);
+           return(prevCount = 1);
       }
     });
   }
