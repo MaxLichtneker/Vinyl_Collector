@@ -5,7 +5,7 @@ function Taskbar(){
     return(
         <div className="taskbar">
             <div className="taskbar-container">
-                <h1>VYNL COLLECTOR</h1>
+                <h1>VINYL COLLECTOR</h1>
                 <input className="taskbar-searchbar"></input>
             </div>
             <div className="taskbar-container-right">

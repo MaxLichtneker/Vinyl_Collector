@@ -2,14 +2,12 @@ import "./Collection.css"
 import Item from "./Item";
 import { useState,useEffect } from "react";
 
-const URL =  "https://api.discogs.com/users/maxlich07/collection/folders/0/releases"
-
-function Collection(){
+function Collection(props){
     const[userCollection, setUserCollection] = useState([]);
         useEffect(()=>{
         const fetchData = async () =>{
             try{
-                const response = await fetch(URL);
+                const response = await fetch(props.url);
                 const json = await response.json();
                 setUserCollection(json.releases || []);
             }
@@ -19,7 +17,7 @@ function Collection(){
             };
             }
     fetchData();
-    },[]);
+    },[props.url]);
 
     const listAlbums = userCollection.map(release=> 
         <Item albumName={
