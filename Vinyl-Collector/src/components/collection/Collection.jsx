@@ -3,9 +3,6 @@ import Item from "./Item";
 import { useState,useEffect } from "react";
 
 function Collection(props){
-
-    const [sortType, setSortType] = useState(0);
-
     const[userCollection, setUserCollection] = useState([]);
         useEffect(()=>{
         const fetchData = async () =>{

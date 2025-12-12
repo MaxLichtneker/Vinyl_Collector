@@ -9,7 +9,7 @@
   position: fixed;
   display: flex;
 
- background-color:#D32328;
+ background-color:#01204E;
  box-shadow: 0px 0px 20px 0px rgb(32, 32, 32);
 }
 
@@ -36,6 +36,7 @@
   width: 45em;
   height: 30px;
   margin-left:25px;
+  
 }
 
 .secondary-navbar{
@@ -52,7 +53,7 @@
   height: 50px;
   max-height: 50px;
   margin-top: 7vh;
-  background-color: #EC8922;
+  background-color: #018391;
 }
 
 .navbar-container{

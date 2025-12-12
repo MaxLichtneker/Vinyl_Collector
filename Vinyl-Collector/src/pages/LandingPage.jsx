@@ -64,7 +64,7 @@ function LandingPage(){
 
       <CollectionFilter/>
 
-      <Collection url={url} filterType={'basic_information.title'}/>
+      <Collection url={url}/>
 
       <div className="collection-page-container">
         <button onClick={PreviousPage}>previous page</button>
