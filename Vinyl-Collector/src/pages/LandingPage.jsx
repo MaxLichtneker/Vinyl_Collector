@@ -56,7 +56,7 @@ function LandingPage(){
 
   return (
   <>
-    <Taskbar/>
+      <Taskbar/>
       <div className='landing-page-container'>
 
       <h1>YOUR COLLECTION</h1>
