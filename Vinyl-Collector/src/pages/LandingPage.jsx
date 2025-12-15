@@ -35,6 +35,7 @@ function LandingPage(){
   function NextPage(){
     setpage(function(prevCount){
         if(prevCount < collectionPages.pagination.pages){
+        scrollToTop();
         handleURL(collectionPages.pagination.urls.next)
         return(prevCount +=1);
       }else{
@@ -46,6 +47,7 @@ function LandingPage(){
   function PreviousPage(){
     setpage(function(prevCount){
       if(prevCount > 1){
+          scrollToTop();
           handleURL(collectionPages.pagination.urls.prev)
         return(prevCount -=1);
       }else{
@@ -54,10 +56,17 @@ function LandingPage(){
     });
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
   <>
-      <Taskbar/>
-      <div className='landing-page-container'>
+    <Taskbar/>
+    <div className='landing-page-container'>
 
       <h1>YOUR COLLECTION</h1>
 
@@ -70,7 +79,6 @@ function LandingPage(){
         <p className="pagetext-style">{currentPage}</p>
         <button onClick={NextPage}>next page</button>
       </div>
-
     </div>
   </>
   )
