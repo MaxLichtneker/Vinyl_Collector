@@ -10,3 +10,10 @@
 
     height: auto;
 }
+
+@media(max-width:800px){
+
+    .collection-container{
+        flex-wrap: wrap;
+    }
+}

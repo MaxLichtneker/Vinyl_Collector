@@ -56,7 +56,7 @@ function LandingPage(){
 
   return (
   <>
-      <Taskbar/>
+    <Taskbar/>
       <div className='landing-page-container'>
 
       <h1>YOUR COLLECTION</h1>
@@ -70,7 +70,6 @@ function LandingPage(){
         <p className="pagetext-style">{currentPage}</p>
         <button onClick={NextPage}>next page</button>
       </div>
-
     </div>
   </>
   )
