@@ -1,0 +1,54 @@
+.Hamburger-WidgetContainer{
+    width: 75px;
+    height: 75px;
+    border-radius: 9999px;
+
+    position: relative;
+    cursor: pointer;
+
+    margin-left: auto;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #0000;
+
+    transition-property: all;
+    transition-duration: 150ms;
+
+    &:hover{
+         background-color: #ffffff23;
+    }
+}
+
+.Hamburger-Container{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 200px;
+    height: 100em;
+    background-color: #018391;
+    border-radius: 5px;
+    right: 0;
+    transform: translateX(100%);
+    z-index: 9999;
+}
+
+.Burger-Widget{
+    width: 3em;
+    height: .45em;
+    background-color: #018391;
+    position: absolute;
+}
+
+.Burger-Button-Style{
+    width: 100%;
+    height: auto;
+    background-color: #018391;
+    border-color: #0000;
+    border-radius: .1;
+    color: white;
+    font-size: large;
+
+    &:hover{
+        background-color: #01204E;
+    }
+}
