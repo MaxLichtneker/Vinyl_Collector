@@ -1,0 +1,19 @@
+.collection-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: #FCA866;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    height: auto;
+}
+
+@media(max-width:800px){
+
+    .collection-container{
+        flex-wrap: wrap;
+    }
+}
