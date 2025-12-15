@@ -1,0 +1,32 @@
+.filter-container{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #FCA866;
+
+
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.filter-container-right{
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.filter-button-style{
+    margin-left: 10px;
+    background-color: #e7cc8c00;
+    border-color: azure;
+    text-decoration: underline;
+
+    border-style: none;
+}
+
+.filter-button-style:hover{
+    border-style: solid;
+}
