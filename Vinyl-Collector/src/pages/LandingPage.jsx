@@ -56,7 +56,6 @@ function LandingPage(){
 
   return (
   <>
-    <SecondaryNavbar/>
     <Taskbar/>
       <div className='landing-page-container'>
 
