@@ -23,7 +23,7 @@ function Login(){
             <h1>LOGIN</h1>
             <form className="form-container" onSubmit={(e) => { e.preventDefault(); navigate('/landingpage'); }}>
                 <input className="inputfield" id="email" name="email" placeholder="Email"></input>
-                <input className="inputfield" id="password" name="password" placeholder="Password"></input>
+                <input className="inputfield" type="password" name="password" placeholder="Password"></input>
                 <a>Forgot password</a>
                 <button type="submit" className="form-button">Log in</button>
                 <p>Dont have an account?&nbsp;<a>register here!</a></p>
